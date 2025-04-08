@@ -8,13 +8,16 @@ public class Ejercicio1 {
         File f= new File("/");
         HashMap<Integer,File> Lista=new HashMap<>();
         File directoriopadre=new File("/");
-        int opcion=-2;
-        while (opcion!=-1){
+        int opcion;
+        while (true){
                 menu(f,Lista);
                 opcion=sc.nextInt();
                 if (opcion==0){
                     f=new File(f.getParent());
-                }else{
+                }else if (opcion==1){
+                    break;
+                }
+                else{
                     directoriopadre= new File(f.getPath());
                     f=new File(Lista.get(opcion).getAbsolutePath());
                 }
