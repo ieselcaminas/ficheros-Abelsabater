@@ -10,15 +10,14 @@ public class Ejercicio1 {
         File directoriopadre=new File("/");
         int opcion=-2;
         while (opcion!=-1){
-            menu(f,Lista);
-            opcion=sc.nextInt();
-            if (opcion==0){
-                f=new File(directoriopadre.getAbsolutePath());
-            }else{
-                directoriopadre= new File(f.getPath());
-                f=new File(Lista.get(opcion).getAbsolutePath());
-
-            }
+                menu(f,Lista);
+                opcion=sc.nextInt();
+                if (opcion==0){
+                    f=new File(f.getParent());
+                }else{
+                    directoriopadre= new File(f.getPath());
+                    f=new File(Lista.get(opcion).getAbsolutePath());
+                }
         }
     }
     public static void menu(File f, HashMap<Integer,File> Lista){
