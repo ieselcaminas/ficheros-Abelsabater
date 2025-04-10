@@ -14,7 +14,7 @@ public class Ejercicio1 {
                 opcion=sc.nextInt();
                 if (opcion==0){
                     f=new File(f.getParent());
-                }else if (opcion==1){
+                }else if (opcion==-1){
                     break;
                 }
                 else{
