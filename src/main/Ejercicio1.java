@@ -7,7 +7,6 @@ public class Ejercicio1 {
         Scanner sc = new Scanner(System.in);
         File f= new File("/");
         HashMap<Integer,File> Lista=new HashMap<>();
-        File directoriopadre=new File("/");
         int opcion;
         while (true){
                 menu(f,Lista);
@@ -16,9 +15,10 @@ public class Ejercicio1 {
                     f=new File(f.getParent());
                 }else if (opcion==-1){
                     break;
+                }else if(opcion==3){
+                    System.out.println("Es un ficher");
                 }
                 else{
-                    directoriopadre= new File(f.getPath());
                     f=new File(Lista.get(opcion).getAbsolutePath());
                 }
         }
