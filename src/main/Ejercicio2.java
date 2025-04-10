@@ -13,11 +13,23 @@ public class Ejercicio2 {
             menu(f,Lista);
             opcion=sc.nextInt();
             if (opcion==0){
-                f=new File(f.getParent());
+                if(f.getParentFile() !=null){
+                    f=new File(f.getParent());
+                }else{
+                    System.out.println("Es el directorio raiz marca otra opción\nPulsa enter para continuar");
+                    sc.nextLine();
+                    sc.nextLine();
+                }
             }else if (opcion==-1){
                 break;
-            }else if(opcion==3){
-                System.out.println("Es un ficher");
+            }else if(Lista.get(opcion).isDirectory() ==false){
+                System.out.println("Es un ficher\nPulsa enter para continuar");
+                sc.nextLine();
+                sc.nextLine();
+            }else if(opcion>f.list().length){
+                System.out.println("Marca una opcion que este dentro de lo que se puede\nPulsa enter para continuar");
+                sc.nextLine();
+                sc.nextLine();
             }
             else{
                 f=new File(Lista.get(opcion).getAbsolutePath());
