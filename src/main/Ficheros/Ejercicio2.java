@@ -1,3 +1,5 @@
+package Ficheros;
+
 import java.io.File;
 import java.text.DateFormat;
 import java.util.HashMap;
