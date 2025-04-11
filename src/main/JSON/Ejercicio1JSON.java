@@ -6,8 +6,7 @@ public class Ejercicio1JSON {
     public static void main(String[] args) {
         String json="{\"num\":46, \"nombre\":\"Miguel\", \"departamento\":10, \"edad\":20, \"sueldo\":1200.00}";
         Gson gson=new Gson();
-        gson.fromJson(json, Empleado.class);
-        System.out.println(gson.fromJson(json, Empleado.class));
+        System.out.println(gson.fromJson(json,Empleado.class));
     }
 }
 class Empleado{
