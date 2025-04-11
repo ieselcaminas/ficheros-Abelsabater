@@ -1,0 +1,54 @@
+{
+  "ligas": [
+    {
+      "nombre": "Premier League",
+      "pais": "Inglaterra",
+      "numero_equipos": 20
+    },
+    {
+      "nombre": "LaLiga",
+      "pais": "España",
+      "numero_equipos": 20
+    },
+    {
+      "nombre": "Serie A",
+      "pais": "Italia",
+      "numero_equipos": 20
+    },
+    {
+      "nombre": "Bundesliga",
+      "pais": "Alemania",
+      "numero_equipos": 18
+    },
+    {
+      "nombre": "Ligue 1",
+      "pais": "Francia",
+      "numero_equipos": 18
+    },
+    {
+      "nombre": "Liga MX",
+      "pais": "México",
+      "numero_equipos": 18
+    },
+    {
+      "nombre": "MLS",
+      "pais": "Estados Unidos",
+      "numero_equipos": 29
+    },
+    {
+      "nombre": "Brasileirão",
+      "pais": "Brasil",
+      "numero_equipos": 20
+    },
+    {
+      "nombre": "Eredivisie",
+      "pais": "Países Bajos",
+      "numero_equipos": 18
+    },
+    {
+      "nombre": "Superliga Argentina",
+      "pais": "Argentina",
+      "numero_equipos": 28
+    }
+  ]
+}
